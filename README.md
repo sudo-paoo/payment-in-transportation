@@ -11,5 +11,9 @@ Install modules using `pip`
 ```
 pip install pick
 ```
-
-## Optimizations
+- [Alive Progress](https://github.com/rsalmei/alive-progress)
+```
+pip install alive-progress
+```
+## Added Features!
+1. Added progress bar
