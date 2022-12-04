@@ -2,6 +2,7 @@ from pick import pick
 from datetime import datetime
 import os
 import time
+from alive_progress import alive_bar
 
 def regular_fare(destination):
     destination_dictionary = {
@@ -77,6 +78,11 @@ while True:
         continue
     elif option == 'Print Receipt':
         os.system("cls")
+        with alive_bar(num) as bar:
+            for i in range(num):
+                time.sleep(0.1)
+                bar()
+
         for key, value in passenger_dictionary.items():
             passengerNumber = key
             print("================================================================")
